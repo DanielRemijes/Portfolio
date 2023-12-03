@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Daniel Remijes</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fa6be40305.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#coc">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1 class="h1tag">Hello, I'm Daniel Remijes.</h1>
+            <h4><span>Front-End Developer,</span> Based in Chennai.<br>Transforming Ideas into Interfaces.</h4>
+        </div>
+    </div>
+    </div>
+
+<!-----------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/Untitled design.png" alt="" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="subTitle">About Me</h1>
+                <p>Hi there! I am Daniel Remijes, As a dedicated Frontend Developer, my experience spans various projects, from mini ones to substantial clone projects. Throughout my journey, I've discovered a profound passion for coding and developed skills related with that.Beyond the realm of coding, I wear another hat as an Electronics engineer pursuing my BE degree at an Anna University-affiliated college in Chennai. Balancing the intricacies of both worlds has been an exciting part of my story. </p>
+
+                <div class="tabTitles">
+                    <p class="tabLinks activeLink" onclick="openTab('education')">Education</p>
+                    <p class="tabLinks" onclick="openTab('contact')">Contact Details</p>
+                </div>
+                <div class="tabContents activeTab" id="education">    
+                    Jerusalem College of Engineering<br>Anna University - Chennai<br>Bachelor's Degree, ECE. July 2023
+                </div>
+                <div class="tabContents" id="contact">    
+                    Daniel Remijes<br>Chennai-100, <br> Tamil Nadu.<br>+91 9940028839<br>danielremijes2002@gmail.com
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--------------skills-------------->
+<div id= "skills">
+    <div class="container">
+        <h1>My Skills</h1>
+            <p class="note">My Programming Language Proficiency</p>
+        <ul>
+            <li><h3>FRONT-END DEVELOPMENT</h3>
+                <span class="bar"><span class="web"></span></span>
+            </li>
+            <li><h3>JAVASCRIPT</h3>
+                <span class="bar"><span class="js"></span></span>
+            </li>
+            <li><h3>JAVA</h3>
+                <span class="bar"><span class="java"></span></span>
+            </li>
+            <li><h3>GIT</h3>
+                <span class="bar"><span class="git"></span></span>
+            </li>
+            <li><h3>SQL</h3>
+                <span class="bar"><span class="sql"></span></span>
+            </li>
+            <li><h3>REACTJS</h3>
+                <span class="bar">  <span class="reactjs"></span></span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!------------My Works---------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subTitle">My Works</h1>
+        <div class="workList">
+            <div class="work">
+                <img src="img/pr1.png" >
+                <div class="layer">
+                    <h3>Book-Tracker</h3>
+                    <p>"Add, view, and delete entries effortlessly with our user-friendly web application."</p>        
+                    <a href="https://book-tracker-bydani.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/pr2.png">
+                <div class="layer">
+                    <h3>To-Do-List</h3>
+                    <p>"Efficiently organize tasks and stay on top of your schedule with this to-do-list app."</p>
+                    <a href="https://to-do-list-bydani.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/pr3.png">
+                <div class="layer">
+                <h3>Nike-Ecommerce clone</h3>
+                <p>"Browse, shop, and stay active effortlessly. Your favorite gear, just a click away."</p>
+                <a href="https://nike-bydani.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!----------Contact--------->
+<div id="coc">
+    <div class="container">
+        <div class="row">
+            <div class="contactLeft">
+                <h1 class="subTitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>danielremijes2002@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9940028839</p>
+                <div class="socialIcons">
+                    <a href="https://instagram.com/danielremijes?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-remijes-072553251"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/DanielRemijes"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="img/Daniel Remijes.A Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contactRight">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top">&#8679;</button>
+    <div class="copyright">
+        <p>Copyright © Crafted With &#128150; by Daniel</p>
+    </div>
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tabLinks");
+var tabcontents= document.getElementsByClassName("tabContents");
+function openTab(tabname){
+    for (tablink of tablinks){
+        tablink.classList.remove("activeLink");
+
+    }
+    for (tabcontent of tabcontents){
+        tabcontent.classList.remove("activeTab");
+
+    }
+    event.currentTarget.classList.add("activeLink");
+    document.getElementById(tabname).classList.add("activeTab");
+}
+</script>
+<script>
+var sidemen=document.getElementById("sidemenu");
+function openmenu(){
+    sidemen.style.right="0";
+}
+function closemenu(){
+    sidemen.style.right="-200px";
+}
+</script>
+
+<script>
+    // Get the button
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollToTopBtn.style.display = "block";
+        } else {
+            scrollToTopBtn.style.display = "none";
+        }
+    }
+
+    // Scroll to the top when the button is clicked
+    function scrollToTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</body>
+</html>
