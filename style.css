@@ -182,6 +182,7 @@ nav ul li a:hover::after{
     color: #fff;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     border-radius: 10px;
+    padding: 7px 0;
 }
 #skills li{
     margin: 15px;
@@ -196,11 +197,10 @@ nav ul li a:hover::after{
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: all 0.2s cubic-bezier(.25,.8,.25,1);
 }
 .bar:hover{
-    box-shadow:  0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow:  0 14px 28px rgba(113, 113, 113, 0.523), 0 10px 10px rgba(140, 140, 140, 0.414);
 }
 .bar span{
     height: 20px;
@@ -347,11 +347,11 @@ nav ul li a:hover::after{
 }
 
 /*----------contact-------*/
-#coc{
+#contas{
     background: rgba(28, 28, 28, 0.522);
     padding-top: 20px;
 }
-#coc .container{
+#contas .container{
     padding: 10px 10%; 
  }
 .contactLeft{
@@ -455,7 +455,8 @@ nav .fa-solid{
         padding: 15px 15px;
     }
     #header{
-        background:linear-gradient(0deg, rgba(255, 0, 150, 0.1), rgba(7, 7, 7, 0.907)), url("img/background1.jpg")
+        background:linear-gradient(0deg, rgba(255, 0, 150, 0.1), rgba(7, 7, 7, 0.907)), url("img/background1.jpg");
+        background-attachment: fixed;
     }
     .header-text{
         margin-top: 70%;
@@ -467,7 +468,7 @@ nav .fa-solid{
     }
     .header-text h4{
         font-size: 20px;
-        margin-top: 40px;
+        
     }
     nav .fa-solid{
         display: block;
@@ -482,7 +483,7 @@ nav .fa-solid{
         height: 50vh;
         padding-top: 40px;
         z-index: 2;
-        border-radius: 10px;
+        border-radius: 1px;
         transition: right 0.3s;
     }
     nav ul li{
@@ -497,6 +498,9 @@ nav .fa-solid{
     }
     .subTitle{
         font-size: 40px;     
+    }
+    #about{
+        padding: 40px 0;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
@@ -519,11 +523,14 @@ nav .fa-solid{
         justify-content: space-between;
         margin-right: 40px;
     }
+    #skills .container{
+        padding-bottom: 40px;
+    }
     #skills h1{
         font-size: 40px;
     }
     .note{
-        font-size: 19px;
+        font-size: 18px;
         padding-left: 0;
         margin-top: 20px;
     }
