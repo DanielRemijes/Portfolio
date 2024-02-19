@@ -392,11 +392,13 @@ nav ul li a:hover::after{
     border-radius: 6px;
     text-decoration: none;
     color: white;
+    transition:  background 1s;
     
 }
 .btn.btn2{
     display: inline-block;
     background-color: #ff004f;
+    transition: background 1s; 
 }
 .contactRight form{
     width: 100%;
